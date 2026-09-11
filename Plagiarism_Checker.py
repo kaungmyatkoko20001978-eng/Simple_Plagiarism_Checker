@@ -38,5 +38,5 @@ def plagiarism_check(filename1, filename2):
     similarity = len(grams1 & grams2) / len(grams1 | grams2)
     print(f"Plagiarism Rate Through Phrase Detection (using {n}-word phrases via n-grams: {similarity:.2%}")
 
-    if __name__ == '__main__':
-        plagiarism_check(filename1='michelle_obama_speech.txt', filename2='melania_trump_speech.txt') #testing
+if __name__ == '__main__':
+    plagiarism_check(filename1='michelle_obama_speech.txt', filename2='melania_trump_speech.txt') #testing
