@@ -30,10 +30,10 @@ So, the three possible slices with correct order: ('a', 'b', 'c'), ('b', 'c', 'd
 
 5 words, n = 3 -> starts 0, 1, 2 -> range(3) -> range(5-3+1)
 
-#    set(  tuple(words[i:i+n])  for i in range(len(words) - n + 1)  )
-#     |---------------------|      |---------------------------------|
-#            │                           │
-#       What to create           What to loop over and until what index
+    set(  tuple(words[i:i+n])  for i in range(len(words) - n + 1)  )
+    |---------------------|      |---------------------------------|
+            │                           │
+       What to create           What to loop over and until what index
 
 Here, --words[i:i+n]-- slices the list. i increases because of the range function every time to move the index to the next position next to it by 1. So....i + 1 every time it loops due to range(). +n is for the number of elements we take per slice.
 
