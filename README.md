@@ -3,6 +3,7 @@ Used Jaccard and n-gram similarity to check the percentage of copied work betwee
 
 Jaccard Similarity: I used this for word level checking. In plagiarised writings, words between the copied and the original are mostly same. This is useful for checking how common the words between two writings overlap.
 Formula => J(A, B) = n(A intersect B)/ n(A union B)
+The 'n()' means the number of elements inside a set.
 
 For those who want to know how n-grams work:
 An n-gram is a sequence of items (for example: letters, words, or blocks of text and speech).
@@ -37,4 +38,4 @@ So, the three possible slices with correct order: ('a', 'b', 'c'), ('b', 'c', 'd
 
 Here, --words[i:i+n]-- slices the list. i increases because of the range function every time to move the index to the next position next to it by 1. So....i + 1 every time it loops due to range(). +n is for the number of elements we take per slice.
 
-Why did you use sets? -- I am pretty sure you may wonder that. The use of sets is important because we want to find the phrases that overlap between both text files. In math, we call that overlap the intersection; to find the intersection easily, we use sets.
+Why did you use sets? -- I am pretty sure you may be wondering about that. The use of sets is important because we want to find the phrases that overlap between both text files. In math, we call that overlap the intersection; to find the intersection easily, we use sets.
