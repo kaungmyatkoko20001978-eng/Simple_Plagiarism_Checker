@@ -33,8 +33,8 @@ def plagiarism_check(filename1, filename2):
     print(f"Jaccard Similarity Rate: {similar:.2%}") #string modifier .2% means to show the percentage up to 2 decimal points
     def get_ngrams(words, n=4):
         return set(tuple(words[i:i+n]) for i in range(len(words) - n + 1)) # a function that returns n-grams without ruining order of words
-    grams1 = get_ngrams(filtered_1, 4)
-    grams2 = get_ngrams(filtered_2, 4)
+    grams1 = get_ngrams(filtered_1, n)
+    grams2 = get_ngrams(filtered_2, n)
     similarity = len(grams1 & grams2) / len(grams1 | grams2)
     print(f"Plagiarism Rate Through Phrase Detection (using {n}-word phrases via n-grams: {similarity:.2%}")
 
