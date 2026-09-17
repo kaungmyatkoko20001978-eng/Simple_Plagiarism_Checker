@@ -1,5 +1,6 @@
 #You will need to install spacy first, type this into your terminal:
 #pip install spacy
+#btw Ubuntu is better than Windows...pls don't get mad...jk both have their own purposes
 #I became a VERY VERY lazy programmer so...yeah...I just hopped onto the library 
 
 def check_plagiarism(filename1, filename2):
